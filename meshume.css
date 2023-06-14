@@ -1,0 +1,685 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+body,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.permbajtja {
+  min-height: 87vh;
+  width: 100%;
+  background-color: #111613;
+  background-image: linear-gradient(135deg, rgb(12, 12, 12) 20%,rgb(43, 31, 31), #4d1e1e 70%);
+  overflow-x: hidden;
+  transform-style: preserve-3d;
+}
+
+.navigimi {
+  position: fixed;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  z-index:10;
+  height: 3rem;
+
+}
+
+
+.menu {
+  max-width: 85rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+  
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  line-height: 4rem;
+  font-family: 'Popins', sans-serif;
+  text-shadow: 0px 0px 9px #9e3a13, 0px 0px 15px #790101, 0px 0px 5px #721313;
+  
+}
+.logo::first-letter{
+  font-size: 170%;
+  color:#c22f2f;
+  font-weight: 780;
+}
+.logo span {
+  font-weight: 300;
+  
+}
+.linqet1{
+  display:inline-flex;
+  width:100%;
+  overflow: hidden;
+  margin-left:140px;
+  margin-top:6px; 
+
+}
+.linqet1 a{
+  margin-right:10px;
+  margin-left:10px;
+  color:white;
+    font-weight:600;
+  font-size:14px;
+    text-decoration:none;
+    display:inline-block;
+    transition: 0.3s;
+  text-align:center;
+  letter-spacing: 1.7px;
+  line-height: 17px;
+}
+
+.permbajtja.active .linqet1 {
+  display: none;
+}
+
+.linqet1 a:hover{
+  border-bottom: solid;
+  border-width: 50%;
+  border-color:rgb(167, 19, 19);
+  border-bottom-width: 4px;
+  border-radius: 21%;
+  transform:scale(1.2);
+}
+.linqet1 a.active{
+  border-bottom: solid;
+  border-width: 20%;
+  border-color:rgb(167, 20, 20);
+  border-bottom-width: 3px;
+  border-radius: 10%;
+  text-transform: uppercase;
+}
+
+.hamburger-menu {
+  height: 4rem;
+  width: 3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right:5px;
+}
+#border{
+  border-bottom: solid rgba(221, 220, 220, 0.596) 0.5px;
+  max-width: 84rem;
+  margin-left:40px;
+  margin-top:6px;
+
+}
+.bar {
+  width: 2.1rem;
+  height: 1.6px;
+  border-radius: 2px;
+  background-color: #eee;
+  transition: 0.5s;
+  position: relative;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: #eee;
+  transition: 0.5s;
+ 
+}
+
+.bar:before {
+  transform: translateY(-9px);
+}
+
+
+.bar:after {
+  transform: translateY(9px);
+}
+
+.qendra {
+  position: relative;
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  z-index:5;
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+}
+
+.hijezimi {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+
+.titulli{
+  position: absolute;
+  display: inline-block;
+  backdrop-filter: blur(3px);
+  margin-left:-160px;
+  z-index: 1;
+  text-align: center;
+  width:28%;
+  height:87vh;
+  background-image:
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.26), rgba(243, 240, 240, 0.377), rgba(255, 255, 255, 0.507), rgba(7, 7, 7, 0.719), rgba(7, 7, 7, 0.671), rgba(7, 7, 7, 0.842));
+}
+
+.titulli h1{
+font-size: 38px;
+color:rgb(255, 255, 255);
+text-shadow: 5px 1px 10px rgb(150, 0, 0);
+font-family: 'Texturina', serif;
+text-transform: uppercase;
+padding:76px 30px;
+letter-spacing: 5px;
+width:80%;
+}
+.titulli h1 span{
+  color:rgb(122, 8, 0);
+  text-shadow: 3px 1px 10px rgb(240, 236, 236);
+  font-size:50;
+}
+.brenda {
+  text-align: center;
+  margin-left:20px;
+  color: #fff;
+  display:inline-flex;
+}
+.fotografit2
+{
+background-repeat: no-repeat;
+background-size:100% 100%;
+background-position:center;
+width: 60%;
+height: 87vh;
+margin: left 300px;
+filter:opacity(0px);
+animation: slidetwo 40s infinite;
+}
+@keyframes slidetwo{
+  0%{
+    background-image: url('boga2.jpg');
+    background-color:rgba(0, 0, 0, 0.568)
+  }
+  9%{
+    background-image:url('boga2.jpg');
+    
+  }
+  
+ 18%{
+   background-image: url('drini2.jpg');
+   
+ }
+ 27%{
+   background-image:url('drini2.jpg');
+   transform:scale(1.01);
+ }
+ 36%{
+   background-image: url('pashtriku1.jpg');
+   transform:scale(1);
+ }
+ 45%{
+   background-image: url('pashtriku1.jpg');
+   transform:scale(1.01);
+ }
+ 54%{
+   background-image: url(boga3.jpg);
+   transform:scale(1);
+ }
+ 63%{
+   background-image: url('boga3.jpg');
+   transform:scale(1.01);
+ }
+ 72%{
+   background-image: url('foto32.png');
+   transform:scale(1);
+ }
+ 81%{
+   background-image: url('foto32.png');
+   transform:scale(1.01);
+ }
+ 90%{
+   background-image: url('brezovica2.jpg');
+   transform:scale(1);
+ }
+ 100%{
+   background-image: url('brezovica2.jpg');
+   transform:scale(1.01);
+ }
+ }
+.fotografit
+{
+background-repeat: no-repeat;
+background-size:100% 100%;
+background-position:center;
+width: 62%;
+height: 87vh;
+filter:saturate(1.6);
+filter:opacity(1.9);
+animation: slide 40s infinite;
+
+}
+@keyframes slide{
+ 0%{
+   background-image: url('drini3.jpg');
+ }
+ 9%{
+   background-image:url('drini3.jpg');
+   transform:scale(1.01);
+ }
+ 
+18%{
+  background-image: url('boga5.jpg');
+  transform:scale(1);
+}
+27%{
+  background-image:url('boga5.jpg');
+  transform:scale(1.01);
+}
+36%{
+  background-image: url('mirusha1.jpg');
+  transform:scale(1);
+}
+45%{
+  background-image: url('mirusha1.jpg');
+  transform:scale(1.01);
+}
+54%{
+  background-image: url('foto29.png');
+  transform:scale(1);
+}
+63%{
+  background-image: url('foto29.png');
+  transform:scale(1.01);
+}
+72%{
+  background-image: url('brezovica5.jpg');
+  transform:scale(1);
+}
+81%{
+  background-image: url('brezovica5.jpg');
+  transform:scale(1.01);
+}
+90%{
+  background-image: url('drini6.jpg');
+  transform:scale(1);
+}
+100%{
+  background-image: url('drini6.jpg');
+  transform:scale(1.01);
+}
+}
+.permbajtja-qytetit{
+  background-image:
+  linear-gradient(to bottom,  rgba(7, 7, 7, 0.945), rgb(7, 7, 7));
+  width:100%;
+  height:auto;
+  color:white;
+  margin-top:-118px;
+  padding-top:50px;
+}
+
+.border{
+  border-bottom:solid 3px;
+  border-color:rgb(238, 238, 238);
+  text-shadow: 3px 3px 10px #790101;
+  border-color: white;
+  width:65%;
+  box-shadow: 3px 5px 10px #eee;
+  margin-left:0px;
+  MARGIN-top:5px;
+  overflow:visible;
+  position: relative;
+}
+.border:before{
+  border-bottom: solid 3px;
+  border-color: rgb(218, 34, 2);
+  content: '';
+  position: absolute;
+  width:50%;
+  z-index:1;
+  
+}
+.pershkrimi-pare{
+  display: inline-flex;
+  width:100%;
+  margin-left:150px;
+  margin-top:90px;
+}
+.pershkrimi-pare video{
+  width:350px;
+  height:350px;
+  border-radius:10px;
+   animation: mymove 5s infinite;
+   
+}
+@keyframes mymove {
+  0% {box-shadow: 8px 8px 20px rgb(150, 33, 4);}
+  30% {box-shadow: 8px 8px 30px rgb(119, 19, 1);}
+  60% {box-shadow: 8px 8px 30px rgb(223, 153, 4);}
+  100% {box-shadow: 8px 8px 30px rgb(1, 99, 22);}
+}
+.permbajtja-qytetit h3{
+  width:100%;
+  font-size:24px;
+  text-align: center;
+  padding-top:6px;
+  font-family: 'Pangolin', cursive;
+  letter-spacing:2px;
+  font-weight:100;
+  animation: shadow 5s infinite;
+}
+@keyframes shadow {
+  0% {text-shadow: 3px 3px 20px rgb(2, 117, 17);}
+  25% {text-shadow: 3px 3px 20px rgb(150, 33, 4);}
+  50% {text-shadow: 3px 3px 20px rgb(2, 117, 17);}
+  75% {text-shadow: 3px 3px 20px rgb(223, 153, 4);}
+  100% {text-shadow: 3px 3px 20px rgb(119, 9, 1);}
+}
+
+.pershkrimi-fotos h2{
+  color:white;
+  font-size:26px;
+  letter-spacing: 2px;
+}
+.pershkrimi-fotos{
+  width:30%;
+  display:inline-block;
+  margin-left:40px;
+  margin-top:30px;
+}
+.pershkrimi-fotos p{
+  font-size: 15px;
+  padding-top:20px;
+}
+
+.pershkrimi-dyte{
+margin-top:50px;
+width:100%;
+}
+.border2{
+border-bottom:solid 3px;
+border-color:rgb(238, 238, 238);
+border-color: white;
+width:61%;
+margin-left:30px;
+margin-top:30px;
+overflow:visible;
+position: relative;
+
+}
+.border2:before{
+border-bottom: solid 3px;
+border-color: rgb(218, 34, 2);
+content: '';
+position: absolute;
+width:50%;
+z-index:1;
+}
+.border3{
+border-bottom:solid 3px;
+border-color:rgb(238, 238, 238);
+text-shadow: 10px 10px 10px #790101;
+border-color: white;
+width:61%;
+margin-left:365px;
+padding-top:10px;
+overflow:visible;
+position: relative;
+}
+.border3:before{
+border-bottom: solid 3px;
+border-color: rgb(218, 34, 2);
+content: '';
+position: absolute;
+width:50%;
+z-index:1;
+}
+.fotografia-anash img{
+width:450px;
+height:350px;
+clip-path: polygon(0 0, 76% 0, 100% 100%, 0 100%);
+border-radius:20px; 
+}
+.fotografia-anash3 img{
+width:450px;
+height:350px;
+clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+border-radius:20px;
+margin-right: -20px; 
+}
+.pershrkimi-fotos4 p{
+font-size: 14px;
+padding-top:30px;
+}
+
+.pershkrimi-permbajtjes{
+display: inline-flex;
+margin-top:30px;
+width:90%;
+margin-left:30px;
+}
+.pershrkimi-fotos2 p{
+font-size:15px;
+padding-top:40px;
+}
+.permbajtja.active .permbajtja-qytetit {
+  display: none;
+}
+.permbajtja.active .bar {
+  transform: rotate(360deg);
+  background-color: transparent;
+}
+
+.permbajtja.active .bar:before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.permbajtja.active .bar:after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.permbajtja.active .qendra{
+  animation: main-animation 0.5s ease;
+  cursor: pointer;
+  transform: perspective(1400px) rotateY(20deg) translateZ(310px) scale(0.5);
+}
+
+@keyframes main-animation {
+  from {
+    transform: translate(0);
+  }
+
+  to {
+    transform: perspective(1400px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
+}
+
+.linqet {
+  position: absolute;
+  width: 30%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.linqet a {
+  text-decoration: none;
+  color: #eee;
+  padding: 0.7rem 0;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(10px);
+  text-shadow: 0px 0px 9px #9e3a13, 0px 0px 15px #790101, 0px 0px 5px #721313;
+  animation: hide 0.5s forwards ease;
+}
+.linqet a::first-letter{
+  font-size: 135%;
+  color:#c02121;
+  font-weight: 500;
+
+}
+
+.linqet a:hover {
+  border-bottom: solid white;
+  
+  border-radius: 5px;
+  border-width: 5px;
+  
+  
+}
+
+.permbajtja.active .linqet a {
+  animation: appear 0.5s forwards ease var(--i);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.hija {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transition: 0.5s;
+  background-color:white;
+}
+
+.hija.pare {
+  z-index: -1;
+  opacity: 0.15;
+  background-color: rgb(255, 44, 44);
+}
+
+.hija.dyte {
+  z-index: -2;
+  opacity: 0.1;
+  background-color: rgb(202, 49, 49);
+}
+
+.permbajtja.active .hija.pare {
+  animation: hija-pare 0.6s ease-out;
+  transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+}
+
+@keyframes hija-pare {
+  0% {
+    transform: translate(0);
+  }
+
+  5% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5);
+  }
+
+  100% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+  }
+}
+
+.permbajtja.active .hija.dyte {
+  animation: hija-dyte 0.6s ease-out;
+  transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
+}
+
+@keyframes hija-dyte {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
+
+  100% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
+  }
+}
+
+.permbajtja.active .qendra:hover + .hija.pare {
+  transform: perspective(1300px) rotateY(20deg) translateZ(230px) scale(0.5);
+}
+
+.permbajtja.active .qendra:hover {
+  transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5);
+}
+
+footer{
+  display:inline-flex;
+  margin-top:-11px;
+  width:100%;
+  height:8vh;
+  color:white;
+  background-color: black;
+}
+footer p{
+  padding-top:12px;
+}
+footer img{
+  width:20px;
+  height:20px;
+  padding-right:5px;
+  padding-left:400px;
+  padding-top:12px;
+}
